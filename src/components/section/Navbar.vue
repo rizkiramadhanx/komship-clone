@@ -1,27 +1,22 @@
 <template>
-  <nav class="layout-container bg-[#160E33] h-[100px]">
+  <nav class="layout-container h-[75px] bg-white sticky top-0 shadow-md z-[99]">
     <div class="layout-child">
-      <div
-        class="flex justify-between px-[20px] md:px-[100px] lg:px-[165px] items-center gap-[30px]"
-      >
-        <div class="mt-2">
-          <Logo />
-        </div>
-        <ul class="md:flex text-white gap-[30px] hidden">
-          <li class="whitespace-nowrap">How it works</li>
-          <li>Cryptos</li>
-          <li>Features</li>
-          <li>Testimonial</li>
-          <li>University</li>
+      <div class="flex justify-between px-[20px] md:px-[30px] lg:px-[75px] items-center gap-[30px]">
+        <Logo class="h-[41px] md:h-full" />
+        <ul class="xl:flex text-[#000000] font-medium text-base gap-16 hidden text-opacity-50">
+          <li>Beranda</li>
+          <li>Layanan</li>
+          <li>Alur Pengiriman</li>
+          <li>Fitur</li>
+          <li>Cek Ongkir</li>
         </ul>
-        <select
-          class="bg-transparent hidden md:flex p-1 text-white border border-red-400 focus:outline-none rounded-full"
+        <button
+          class="bg-transparent font-light rounded-xl w-[127px] justify-center h-[44px] text-brand-orange hidden xl:flex px-3 border items-center border-brand-orange"
         >
-          <option>English</option>
-          <option>Indonesia</option>
-        </select>
-        <div class="md:hidden">
-          <Icon icon="game-icons:hamburger-menu" width="30" color="red" />
+          Masuk
+        </button>
+        <div class="xl:hidden border border-brand-orange px-2 py-1 rounded-md">
+          <Icon icon="game-icons:hamburger-menu" width="23" color="red" />
         </div>
       </div>
     </div>
