@@ -34,10 +34,12 @@
       </div>
     </div>
     <div
-      class="absolute h-20 bg-gray-600 -bottom-7 flex flex-col items-center justify-center w-full sm:w-[500px] rounded-2xl md:px-[30px] py-[20px]"
+      class="absolute bg-[#F0C101] -bottom-12 flex flex-col items-center justify-center w-11/12 md:w-[700px] rounded-full md:px-[30px] py-[20px]"
     >
-      <p>*khusus kamu yang tiap hari kirim COD</p>
-      <p>KLIK DISINI buat Lihat Fitur Powerfulnya</p>
+      <p class="font-medium text-[20px]">
+        *khusus kamu yang tiap hari kirim <span class="font-bold">COD</span>
+      </p>
+      <p class="font-bold text-[24px]">KLIK DISINI buat Lihat Fitur Powerfulnya</p>
     </div>
   </section>
 </template>

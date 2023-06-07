@@ -1,5 +1,8 @@
 <template>
-  <nav class="layout-container h-[75px] bg-white sticky top-0 shadow-md z-[99]">
+  <nav
+    class="layout-container h-[75px] bg-white sticky top-0 z-[99]"
+    :class="y === 0 ? null : 'shadow-md'"
+  >
     <div class="layout-child">
       <div class="flex justify-between px-[20px] md:px-[30px] lg:px-[75px] items-center gap-[30px]">
         <Logo class="h-[41px] md:h-full" />
@@ -26,12 +29,18 @@
 <script lang="ts">
 import Logo from '@/assets/svg/logo.vue'
 import { Icon } from '@iconify/vue'
+import { useWindowScroll } from '@vueuse/core'
 
 export default {
   name: 'Navbar',
   components: {
     Logo,
     Icon
+  },
+  setup() {
+    const { y } = useWindowScroll()
+
+    return { y }
   }
 }
 </script>

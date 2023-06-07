@@ -6,7 +6,10 @@ module.exports = {
       colors: {
         'brand-orange': '#F95031',
         'brand-black': '#222222',
-        'brand-gray': '#828282'
+        'brand-gray': '#828285'
+      },
+      gridTemplateColumns: {
+        benefitText: '4fr 6fr'
       }
     }
   },
