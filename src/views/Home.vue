@@ -4,14 +4,18 @@ import Hero from '@/components/section/Hero.vue'
 import Navbar from '@/components/section/Navbar.vue'
 // import BenefitTable from '@/components/section/BenefitTable.vue'
 import Recommendation from '@/components/section/Recommendation.vue'
+import Register from '@/components/section/Register.vue'
 import Ship from '@/components/section/Ship.vue'
+import Testimoni from '@/components/section/Testimoni.vue'
 </script>
 
 <script lang="ts">
 export default {
   name: 'Home',
-  components: { Navbar, Hero, Benefit, Recommendation, Ship }
+  components: { Navbar, Hero, Benefit, Recommendation, Ship, Register, Testimoni }
 }
 </script>
 
-<template><Navbar /><Hero /><Benefit /><Recommendation /><Ship /></template>
+<template>
+  <Navbar /><Hero /><Benefit /><Recommendation /><Ship /><Register /><Testimoni />
+</template>
