@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-[#f8f9fa] layout-container">
-    <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px] pt-[156px]">
+  <section class="bg-[#f8f9fa] layout-container relative">
+    <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px] pt-[156px] pb-[65px]">
       <div class="grid grid-cols-1 md:grid-cols-benefitText gap-y-[10px]">
         <div class="flex items-center md:justify-center">
           <h1 class="font-bold text-[32px] text-center">Sering kirim barang?</h1>
@@ -12,11 +12,27 @@
         </p>
       </div>
       <div
-        class="rounded-[20px] gap-y-[50px] bg-gradient-to-r from-[#FF6A3A] to-[#FBA63C] px-8 py-20 mt-12 gap-x-[24px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        class="rounded-[20px] gap-y-[50px] bg-gradient-to-r from-[#FF6A3A] to-[#FBA63C] px-8 pt-20 pb-[130px] p mt-12 gap-x-[24px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hidden sm:grid"
       >
         <template v-for="(item, key) of CardBenefitData" :key="key">
           <CardBenefit :title="item.title" :description="item.description" :image="item.image" />
         </template>
+      </div>
+    </div>
+    <div
+      class="sm:absolute rounded-[30px] sm:grid gap-y-5 grid-cols-1 xl:grid-cols-benefit-partner -bottom-5 md:bottom-2 sm:w-10/12 bg-white px-[50px] py-[20px]"
+    >
+      <div>
+        <p class="font-semibold text-[#212529]">
+          Kami telah bekerjasama dengan Ekspedisi ternama yang mendukung pengiriman
+        </p>
+        <p class="font-semibold text-[18px] text-brand-orange">COD dan Non-COD</p>
+      </div>
+      <div class="flex gap-x-[14px] items-center justify-between sm:justify-center mt-5 sm:mt-0">
+        <img :src="image.JNE" alt="Jne" class="h-7 sm:h-10" />
+        <img :src="image.SiCepat" alt="Si Cepat" class="h-7 sm:h-10" />
+        <img :src="image.IdExpress" alt="Id express" class="h-7 sm:h-10" />
+        <img :src="image.SAP" alt="SAP" class="h-7 sm:h-10" />
       </div>
     </div>
   </section>
@@ -30,6 +46,11 @@ import Calendar from '@/assets/img/benefit/calender.png'
 import Packet from '@/assets/img/benefit/packet.png'
 import Retur from '@/assets/img/benefit/image.png'
 import Grow from '@/assets/img/benefit/grow.png'
+// partner
+import JNE from '@/assets/img/partner/jne.png'
+import IdExpress from '@/assets/img/partner/idexpress.png'
+import SiCepat from '@/assets/img/partner/sicepat.png'
+import SAP from '@/assets/img/partner/sap.png'
 
 export default {
   name: 'Benefit',
@@ -72,7 +93,13 @@ export default {
             'Cukup tunggu saja di rumah, kurir akan mendatangi lokasimu untuk mengambil paket <b>TANPA MINIMUM ORDER.</b>',
           image: Packet
         }
-      ]
+      ],
+      image: {
+        JNE: JNE,
+        SiCepat: SiCepat,
+        SAP: SAP,
+        IdExpress: IdExpress
+      }
     }
   }
 }

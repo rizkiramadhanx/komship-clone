@@ -34,7 +34,7 @@
       </div>
     </div>
     <div
-      class="absolute bg-[#F0C101] -bottom-12 flex flex-col items-center justify-center w-11/12 md:w-[700px] rounded-full md:px-[30px] py-[20px]"
+      class="absolute bg-[#F0C101] -bottom-12 flex flex-col items-center justify-center w-11/12 md:w-[700px] rounded-full md:px-[30px] py-[20px] z-10"
     >
       <p class="font-medium text-[20px]">
         *khusus kamu yang tiap hari kirim <span class="font-bold">COD</span>

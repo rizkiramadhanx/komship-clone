@@ -9,7 +9,8 @@ module.exports = {
         'brand-gray': '#828285'
       },
       gridTemplateColumns: {
-        benefitText: '4fr 6fr'
+        benefitText: '4fr 6fr',
+        'benefit-partner': '4fr 5fr'
       }
     }
   },

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="layout-container h-[75px] bg-white sticky top-0 z-[99]"
+    class="layout-container h-[75px] bg-white sticky top-0 z-[99] transition-shadow"
     :class="y === 0 ? null : 'shadow-md'"
   >
     <div class="layout-child">
