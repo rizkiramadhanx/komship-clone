@@ -3,7 +3,9 @@
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px] pt-[156px] pb-[65px]">
       <div class="grid grid-cols-1 md:grid-cols-benefitText gap-y-[10px]">
         <div class="flex items-center md:justify-center">
-          <h1 class="font-bold text-[32px] text-center">Sering kirim barang?</h1>
+          <h1 data-aos="fade-up" data-aos-duration="1500" class="font-bold text-[32px] text-center">
+            Sering kirim barang?
+          </h1>
         </div>
         <p class="text-brand-gray">
           Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat keuntungan dan
@@ -15,11 +17,19 @@
         class="rounded-[20px] gap-y-[50px] bg-gradient-to-r from-[#FF6A3A] to-[#FBA63C] px-8 pt-20 pb-[130px] p mt-12 gap-x-[24px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hidden sm:grid"
       >
         <template v-for="(item, key) of CardBenefitData" :key="key">
-          <CardBenefit :title="item.title" :description="item.description" :image="item.image" />
+          <CardBenefit
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            :title="item.title"
+            :description="item.description"
+            :image="item.image"
+          />
         </template>
       </div>
     </div>
     <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
       class="sm:absolute rounded-[30px] sm:grid gap-y-5 grid-cols-1 xl:grid-cols-benefit-partner -bottom-5 md:bottom-2 sm:w-10/12 bg-white px-[50px] py-[20px]"
     >
       <div>

@@ -1,13 +1,13 @@
 <template>
   <section class="bg-white layout-container py-10">
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px]">
-      <h1 class="text-[32px] font-bold">
+      <h1 data-aos="fade-up" data-aos-duration="1500" class="text-[32px] font-bold">
         Alur pengiriman <br />
         menggunakan <span class="text-brand-orange">Komship</span>
       </h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-3 mt-[38px]">
         <template v-for="(item, key) in dataCardShip" :key="key">
-          <div class="flex sm:flex-col">
+          <div data-aos="zoom-in-right" data-aos-duration="1500" class="flex sm:flex-col">
             <div class="flex justify-center">
               <h1
                 class="rounded-full font-bold bg-[#FFECE9] flex sm:order-none text-brand-orange items-center justify-center border-[#FF6A3A] border w-[30px] h-[30px] md:w-[50px] md:h-[50px]"

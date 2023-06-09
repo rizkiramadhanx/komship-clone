@@ -1,10 +1,21 @@
 <template>
   <section class="bg-[#f8f9fa] layout-container py-10">
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px]">
-      <h1 class="text-center text-[#222222] font-bold text-[32px]">Rekomendasi untuk Kamu</h1>
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        class="text-center text-[#222222] font-bold text-[32px]"
+      >
+        Rekomendasi untuk Kamu
+      </h1>
       <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-x-6 gap-y-4 mt-[24px]">
         <template v-for="(item, key) in cardRecommendationData" :key="key">
-          <CardRecommendation :image="item.image" :description="item.description" />
+          <CardRecommendation
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+            :image="item.image"
+            :description="item.description"
+          />
         </template>
       </div>
     </div>

@@ -3,6 +3,8 @@
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px]">
       <div class="py-[25px] grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-8">
         <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
           class="flex items-start min-h-[calc(100vh_-_75px)] sm:min-h-fit gap-4 justify-center flex-col"
         >
           <h1
@@ -28,7 +30,11 @@
             Mulai Sekarang
           </button>
         </div>
-        <div class="flex items-center justify-center mb-20 sm:mb-0">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          class="flex items-center justify-center mb-20 sm:mb-0"
+        >
           <img src="@/assets/img/hero.png" />
         </div>
       </div>

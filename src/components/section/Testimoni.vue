@@ -1,6 +1,16 @@
 <template>
   <section class="bg-white layout-container py-10">
     <div class="layout-child px-[20px]">
+      <h1
+        data-aos="zoom-in-down"
+        class="text-black text-[32px] text-center flex justify-center items-center font-bold mb-[40px]"
+        data-aos-duration="1500"
+      >
+        <div class="md:w-1/2">
+          <span class="text-brand-orange">Komship </span>
+          telah dipercaya oleh Pebisnis dan UMKM di Indonesia
+        </div>
+      </h1>
       <Carousel :items-to-show="3" :breakpoints="breakpoints" :autoplay="4000" :wrapAround="true">
         <Slide v-for="(item, key) in dataCardTestimoni" :key="key">
           <div class="carousel__item h-[350px] w-[350px] mb-10 rounded-[20px] shadow-md">

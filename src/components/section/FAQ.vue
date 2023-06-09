@@ -1,14 +1,14 @@
 <template>
   <section class="bg-[#f8f9fa] layout-container py-10">
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px]">
-      <template v-for="(item, key) in toggle ? dataFaq.concat(newData) : dataFaq" :key="key">
-        <AccordionPanel
-          :title="item.title"
-          :ariaTitle="item.title"
-          :type="key === 0 ? 'first' : dataFaq.length === key + 1 ? 'last' : 'else'"
-          >{{ item.description }}</AccordionPanel
-        >
-      </template>
+      <h1 class="mb-[46px] text-[32px] font-bold text-center">FAQ</h1>
+      <div class="flex flex-col gap-[10px]">
+        <template v-for="(item, key) in toggle ? dataFaq.concat(newData) : dataFaq" :key="key">
+          <AccordionPanel :title="item.title" :ariaTitle="item.title">{{
+            item.description
+          }}</AccordionPanel>
+        </template>
+      </div>
       <div @click="toggleFAQ" class="w-full cursor-pointer justify-end gap-2 mt-5 flex px-[15px]">
         <h2 class="text-brand-orange">Lihat FAQ Lainya</h2>
         <IconMinus class="text-brand-orange duration-[10s] hover:animate-spin" v-if="toggle" />
