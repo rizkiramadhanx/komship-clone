@@ -3,7 +3,7 @@
     <div class="layout-child px-[20px]">
       <Carousel :items-to-show="3" :breakpoints="breakpoints" :autoplay="4000" :wrapAround="true">
         <Slide v-for="(item, key) in dataCardTestimoni" :key="key">
-          <div class="carousel__item h-[350px] w-[350px] rounded-[20px] shadow-md">
+          <div class="carousel__item h-[350px] w-[350px] mb-10 rounded-[20px] shadow-md">
             <h2
               class="flex items-center pl-20 justify-center rounded-t-[20px] text-[20px] font-medium bg-[#FF6A3A] text-white h-20"
             >
