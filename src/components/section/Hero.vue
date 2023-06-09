@@ -1,7 +1,7 @@
 <template>
   <section class="layout-container min-h-[calc(100vh_-_75px)] lg:min-h-[500px] relative pb-10">
     <div class="layout-child px-[20px] md:px-[30px] lg:px-[75px]">
-      <div class="py-[25px] grid grid-cols-1 md:grid-cols-2 gap-x-8">
+      <div class="py-[25px] grid grid-cols-1 gap-y-8 md:grid-cols-2 gap-x-8">
         <div
           class="flex items-start min-h-[calc(100vh_-_75px)] sm:min-h-fit gap-4 justify-center flex-col"
         >
@@ -28,18 +28,18 @@
             Mulai Sekarang
           </button>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center mb-20 sm:mb-0">
           <img src="@/assets/img/hero.png" />
         </div>
       </div>
     </div>
     <div
-      class="absolute bg-[#F0C101] -bottom-12 flex flex-col items-center justify-center w-11/12 md:w-[700px] rounded-full md:px-[30px] py-[20px] z-10"
+      class="absolute bg-[#F0C101] -bottom-12 flex flex-col items-center justify-center w-11/12 md:w-[700px] rounded-[30px] px-7 md:rounded-full md:px-[30px] py-[20px] z-10"
     >
-      <p class="font-medium text-[20px]">
+      <p class="font-medium text-normal md:text-[20px]">
         *khusus kamu yang tiap hari kirim <span class="font-bold">COD</span>
       </p>
-      <p class="font-bold text-[24px]">KLIK DISINI buat Lihat Fitur Powerfulnya</p>
+      <p class="font-bold text-[20px] md:text-[24px]">KLIK DISINI buat Lihat Fitur Powerfulnya</p>
     </div>
   </section>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-md rounded-md w-[450px]">
+  <div class="shadow-md rounded-md w-[250px] md:w-[450px]">
     <div class="flex justify-center h-[200px]">
       <img :src="image" />
     </div>

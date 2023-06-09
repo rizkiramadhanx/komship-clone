@@ -29,10 +29,10 @@
         <p class="font-semibold text-[18px] text-brand-orange">COD dan Non-COD</p>
       </div>
       <div class="flex gap-x-[14px] items-center justify-between sm:justify-center mt-5 sm:mt-0">
-        <img :src="image.JNE" alt="Jne" class="h-7 sm:h-10" />
-        <img :src="image.SiCepat" alt="Si Cepat" class="h-7 sm:h-10" />
-        <img :src="image.IdExpress" alt="Id express" class="h-7 sm:h-10" />
-        <img :src="image.SAP" alt="SAP" class="h-7 sm:h-10" />
+        <img :src="image.JNE" alt="Jne" class="h-[14px] sm:h-10" />
+        <img :src="image.SiCepat" alt="Si Cepat" class="h-[14px] sm:h-10" />
+        <img :src="image.IdExpress" alt="Id express" class="h-[14px] sm:h-10" />
+        <img :src="image.SAP" alt="SAP" class="h-[14px] sm:h-10" />
       </div>
     </div>
   </section>

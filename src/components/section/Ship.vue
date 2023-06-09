@@ -5,23 +5,23 @@
         Alur pengiriman <br />
         menggunakan <span class="text-brand-orange">Komship</span>
       </h1>
-      <div class="grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-y-3 mt-[38px]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-3 mt-[38px]">
         <template v-for="(item, key) in dataCardShip" :key="key">
           <div class="flex sm:flex-col">
             <div class="flex justify-center">
               <h1
-                class="rounded-full font-bold bg-[#FFECE9] flex sm:order-none text-brand-orange items-center justify-center border-[#FF6A3A] border w-[50px] h-[50px]"
+                class="rounded-full font-bold bg-[#FFECE9] flex sm:order-none text-brand-orange items-center justify-center border-[#FF6A3A] border w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
                 :class="(key + 1) % 2 ? 'order-first' : 'order-last'"
               >
                 {{ key + 1 }}
               </h1>
-              <component :is="item.svg" />
+              <component :is="item.svg" class="w-[130px]" />
             </div>
             <div
               class="text-brand-orange text-center sm:order-none px-3 mt-2 flex items-center"
               :class="(key + 1) % 2 ? 'order-last' : 'order-first'"
             >
-              <p class="w-full text-center pl-14">
+              <p class="w-full text-center md:pl-14">
                 {{ item.description }}
               </p>
             </div>

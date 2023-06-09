@@ -60,9 +60,9 @@ export default {
       ],
       breakpoints: {
         // 700px and up
-        500: {
+        200: {
           itemsToShow: 1,
-          snapAlign: 'center'
+          snapAlign: 'start'
         },
         // 1024 and up
         800: {

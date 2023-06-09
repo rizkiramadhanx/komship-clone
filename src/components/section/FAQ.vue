@@ -9,7 +9,7 @@
           >{{ item.description }}</AccordionPanel
         >
       </template>
-      <div @click="toggleFAQ" class="w-full justify-end gap-2 mt-5 flex px-[15px]">
+      <div @click="toggleFAQ" class="w-full cursor-pointer justify-end gap-2 mt-5 flex px-[15px]">
         <h2 class="text-brand-orange">Lihat FAQ Lainya</h2>
         <IconMinus class="text-brand-orange duration-[10s] hover:animate-spin" v-if="toggle" />
         <IconPlus class="text-brand-orange duration-[10s] hover:animate-spin" v-else />
